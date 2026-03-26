@@ -13,4 +13,7 @@ PocketBase is an open-source backend in a single file—database, auth, file sto
 
 ---
 
-**Note:** After deployment, visit `/_/` to create your first superuser.
+## After deployment
+
+**First-time setup:** After deployment, visit `https://your_domain_here.railway/_/` to create your first superuser.
+**You only see a login screen?:** In this case you need to look into the "Deploy Logs"
