@@ -15,6 +15,10 @@ Generate an encryption key:
 openssl rand -base64 32 | tr -d '=' | cut -c1-32
 ```
 
+## Persistent Storage
+
+Attach a Railway volume to `/pb/pb_data` to persist your database and uploaded files across deployments.
+
 ## Updating PocketBase
 
 Change `PB_VERSION` in the Dockerfile and redeploy. All user data in `/pb/pb_data` persists across updates.
