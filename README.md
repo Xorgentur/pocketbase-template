@@ -9,19 +9,7 @@ PocketBase is an open-source backend in a single file—database, auth, file sto
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `PB_ENCRYPTION_KEY` | 32-character key to encrypt sensitive settings (e.g. SMTP passwords) | No |
-
-Generate an encryption key:
-```bash
-openssl rand -base64 32 | tr -d '=' | cut -c1-32
-```
-
-## Persistent Storage
-
-Attach a Railway volume to `/pb/pb_data` to persist your database and uploaded files across deployments.
-
-## Updating PocketBase
-
-Change `PB_VERSION` in the Dockerfile and redeploy. All user data in `/pb/pb_data` persists across updates.
+| `GOMEMLIMIT` | Memory limit to prevent OOM crashes in MB (e.g. `512`, `1024`) | No |
 
 ---
 
