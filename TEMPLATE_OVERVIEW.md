@@ -12,11 +12,6 @@ Deploying PocketBase on Railway is straightforward with a containerized setup. T
 - **Internal tools and admin dashboards** for teams
 - **Mobile/web app backends** with REST API and real-time subscriptions
 
-## Dependencies for PocketBase Hosting
-
-- [Dockerfile](Dockerfile) - Container definition using Alpine Linux
-- [Railway Volume](https://docs.railway.com/reference/volumes) - Persistent storage for SQLite database
-
 ### Deployment Dependencies
 
 - [PocketBase GitHub Repository](https://github.com/pocketbase/pocketbase)
